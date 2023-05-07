@@ -1,0 +1,144 @@
+ body{
+    background-color: #eee;
+    background-image:url('/static/images/导航条.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+ }
+ span {
+    margin-left: 6px;
+    font-size: 1.8vw;
+    color: #5f676e;
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.d{
+    font-size: 16px;
+    color: gray;
+    display: inline-block;
+    margin: 2px;
+    
+}
+.start {
+    background-color: white;
+    width: 80%;
+    margin: 0 10%;
+    padding: 1%;
+    margin-top: 10%;
+}
+h2{
+    margin-bottom: 8px;
+    font-size: 2.3vw;
+}
+
+.screen {
+  width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+    form{
+        margin: 0px auto;
+        width: 80%;
+        margin-top: -2%;
+        text-align: center;
+    }
+    video{
+        width:102.5%;
+    }
+.content {
+   border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 36vw;
+    height: 35px;
+    font-size: 18px;
+    vertical-align: top;
+    padding-left: 3%;
+    color: "7e7e7e";
+    margin-right: -20px;
+    display: inline-block;
+}
+    p{
+        display: none;
+    }
+ 
+    .send {
+   color: white;
+    display: inline-block;
+    background-color: rgb(0,113,236);
+    font-size: 20px;
+    height: 39px;
+    padding: 0px 15px;
+    border-radius: 0px 8px 8px 0px;
+    line-height: 39px
+    }
+    
+    
+
+ 
+    .edit {
+        margin: 20px;
+        text-align: center;
+    }
+ 
+    .edit .btns{
+        margin-top: 20px;
+    }
+ 
+    .edit .msg input{
+        padding-left: 5px;
+    }
+
+ 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .dm_show {
+        margin: 30px;
+    }
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.barrageBox {
+    width: 90%;
+    min-height:600px;
+    border:2px solid black;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5% auto;
+    overflow: hidden;
+}
+.box {
+    position: absolute;
+    visibility: hidden;
+    animation: barrage 8s linear 0s;
+     /*这个是循环播放的属性，需要就加上 */
+     /*animation-play-state: paused; */
+}
+
+/* 鼠标划入时暂停动画 */
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes barrage {
+    from {
+        left: 70%;
+        visibility: visible;
+        transform: translateX(10%);
+    }
+
+    to {
+        left: 25%;
+        visibility: visible;
+        transform: translateX(-90%);
+    }
+}
+html{
+    overflow-x: hidden;
+}
+

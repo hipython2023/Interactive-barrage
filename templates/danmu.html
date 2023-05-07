@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>欢迎来到学而思编程</title>
+    <link rel="stylesheet" href="/static/css/danmu.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    {%   for item in list   %}
+        <p>{{  item   }}</p>
+    {% endfor %}
+
+
+    <div class="con">
+        <div class="screen">
+            <!-- <img src="/static/images/uninstall.bmp"> -->
+            <div class="dm_show">
+            </div>
+        </div>
+    </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <form action="/show">
+            <input placeholder="快来一起发弹幕吧？" class="content" name="danmu">
+            <div  class="send">发送</div>
+    </form>
+    
+    <!--============此处js 能够让所有弹幕带有颜色的滚动展示===============================================-->
+    <script src="/static/js/danmu.js"></script>
+    
+    
+
+</body>
+</html>
